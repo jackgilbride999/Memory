@@ -9,4 +9,9 @@ Countdown.s determines whether one null-terminated string in memory is a substri
 
 Lotto.s looks at a list of "Lottery tickets" in memory as well as a "Lottery draw". It determines how many tickets have matched 4, 5 and 6 numbers with the draw and stores these values in locations MATCH4, MATCH5 and MATCH6 respectively. COUNT is a word-sized value in memory which should store the number of tickets. TICKETS is a two-dimensional array of bytes representing ticket numbers, stored in row-major order. There are six columns and COUNT rows. Each row represents one ticket, i.e. one ticket contains six bytes. With the data provided in the DATA section, after execution MATCH4 should store 0, MATCH5 should store 0 and MATCH6 should store 1, corresponding to the third ticket in the array having six matches.
 
-All three programs were tested for reasonable sets in memory and no bugs were found.
+USAGE:
+- Build and run the programs.
+- Look in the relevant areas of memory mentioned in the .s files for each respective output.
+
+KNOWN LIMITATIONS:
+- All three programs were tested for reasonable sets in memory and no bugs were found.
